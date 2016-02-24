@@ -1,3 +1,26 @@
+@keyframes fadeLeft {
+  from {
+    opacity:0;
+    margin-left:-30px;
+  }
+  to {
+    opacity:1;
+    margin-left:0;
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity:0;
+    margin-left:30px;
+  }
+  to {
+    opacity:1;
+    margin-left:0;
+  }
+}
+
+
 * {
   margin:0;
   padding:0;
@@ -19,15 +42,24 @@
   border-style:solid;
   border-radius:3px;
   margin-top:10px;
+  transition-duration:0.25s;
+  opacity:1;
+}
+
+.i:hover, .p:hover {
+  opacity:0.5;
+  transition-duration:0.25s;
 }
 
 .i {
-  background-color:#7accc8  ;
+  animation:fadeLeft 1s ease-in 0s 1 forwards;
+  background-color:#7accc8;
   left:100px;
   border-color:#7accc8;
 }
 
 .p {
+  animation:fadeRight 1s ease-in 0s 1 forwards;
   text-align:right;
   background-color:#49a9a4;
   border-color:#49a9a4;

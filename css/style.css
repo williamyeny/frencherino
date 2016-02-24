@@ -1,0 +1,35 @@
+* {
+  margin:0;
+  padding:0;
+  font-family:sans-serif;
+  background-color:#f2e394;
+  color:white;
+}
+
+.container {
+  width:400px;
+  margin:0 auto;
+}
+
+.i, .p {
+  position:relative;
+  padding:20px;
+  width:300px;
+  font-size:1.7em;
+  border-style:solid;
+  border-radius:3px;
+  margin-top:10px;
+}
+
+.i {
+  background-color:#7accc8  ;
+  left:100px;
+  border-color:#7accc8;
+}
+
+.p {
+  text-align:right;
+  background-color:#49a9a4;
+  border-color:#49a9a4;
+}
+
